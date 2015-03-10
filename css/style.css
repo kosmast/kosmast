@@ -34,7 +34,7 @@ a:hover{
 		color: #fff;
 		padding: 10px 0 0 0;
 		font-family: "Arial Black", Gadget, sans-serif;
-		background: url("../images/header-bg2.png");
+		background: url("https://cloud.githubusercontent.com/assets/2961492/6550910/70759658-c638-11e4-9d4c-acb8e3093d36.png");
 
 	}
 
@@ -166,7 +166,7 @@ a:hover{
 		padding: 7px 10px 7px 50px;
 		width: auto;
 		font-size: 110%;
-		background: url('../images/send.png') #6aa7cf left 10px top 0px no-repeat; 
+		background: url('https://cloud.githubusercontent.com/assets/2961492/6573859/c52831ca-c727-11e4-9396-3c7582d4a7d8.png') #6aa7cf left 10px top 0px no-repeat; 
 		border: 1px solid #ddd;
 		font-family: 'Poiret One', cursive;
 		font-weight: bold;
@@ -183,22 +183,22 @@ a:hover{
 		margin-bottom: 30px;	
 	}
 	ul.social li a.email{
-		background: url('../images/email.png') left 10px top 0px no-repeat;
+		background: url('https://cloud.githubusercontent.com/assets/2961492/6573857/c1fd4b02-c727-11e4-9c3c-42a33dcf8c55.png') left 10px top 0px no-repeat;
 	}
 	ul.social li a.linkedin{
-		background: url('../images/linkedin.png') left 10px top 0px no-repeat;
+		background: url('https://cloud.githubusercontent.com/assets/2961492/6573851/ba0836be-c727-11e4-8447-286d6e161e4b.png') left 10px top 0px no-repeat;
 	}	
 	ul.social li a.facebook{
-		background: url('../images/facebook.png') left 10px top 0px no-repeat;
+		background: url('https://cloud.githubusercontent.com/assets/2961492/6573854/bf2942a0-c727-11e4-84c3-ab26b25f9329.png') left 10px top 0px no-repeat;
 	}		
 	ul.social li a.skype{
-		background: url('../images/skype.png') left 10px top 0px no-repeat;
+		background: url('https://cloud.githubusercontent.com/assets/2961492/6573861/c8183966-c727-11e4-9a18-0e56db6727f0.png') left 10px top 0px no-repeat;
 	}	
 	/********** CONTACT STARTS HERE **********/
 
 
 	footer {
-		background: url("../images/header-bg2.png");
+		background: url("https://cloud.githubusercontent.com/assets/2961492/6550910/70759658-c638-11e4-9d4c-acb8e3093d36.png");
 		width: 80%;
 		height: 100px;
 		color: #fff;
