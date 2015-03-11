@@ -8,9 +8,11 @@
         <meta name="description" content="Kosmas Tsakmakidis - Web Developer - Greece"/>
         <meta name="keywords" content="Web Developer, PHP, HTML5, CSS3, jQuery, Greece, greek ,kosmas tsakmakidis , kosmast"/>
         <meta name="author" content="Kosmas Tsakmakidis" />
-        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="shortcut icon" href="./images/favicon.png">
 <!--[if lt IE 9]>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script>
+window.location.assign("http://www.google.com");
+</script>
 <![endif]-->
         <link href='./css/style.css' rel='stylesheet'>
         <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
@@ -18,14 +20,15 @@
         <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        <div id="home" class="container">
+        <div class="container" id="home">
             <header class="noselect">
-                <h2 style="font-weight: bold; padding: 0 10%; font-family: 'Poiret One', cursive; font-size:210%;">Kosmas Tsakmakidis</h2>
-                <span style="display: block; padding: 0 10%; margin-bottom:10px; font-size:140%; font-family:'Kaushan Script', cursive;">Web Applications Developer</span>
+                <h2>Kosmas Tsakmakidis</h2>
+                <span>Web Applications Developer</span>
                 <nav>
                     <ul>
-                        <li id="display-menu"><a href="#menu"><img src="https://cloud.githubusercontent.com/assets/2961492/6550912/73ecda94-c638-11e4-9209-417ee5818d3b.png" alt="Smiley face" style="width: 25px; height: 25px;"></a></li>
-                        <li class="menu-element"><a href="#home">Home</a></li>
+                        <li id="display-menu"><a href="#menu"><img src="./images/menu.png" alt="Menu" style="width: 25px; height: 25px;"></a></li>
+                        <li id="display-logo">Kosmas Tsakmakidis</li>
+                        <li id="first-element" class="menu-element"><a href="#home">Home</a></li>
                         <li class="menu-element"><a href="#education">Education</a></li>
                         <li class="menu-element"><a href="#work-experience">Work Experience</a></li>
                         <li class="menu-element"><a href="#contact">Contact</a></li>
@@ -34,15 +37,14 @@
             </header>
 
             <div class="wrapper">
-                <h2 class="section-title">Welcome</h2>
+                <h2 class="section-title noselect">Welcome</h2>
                 <section class="section-medium">
+                    <div class="circular"></div>
                 </section>
-                <aside class="section-small">
-                </aside>
             </div>              
 
             <div class="wrapper" id="education">
-                <h2 class="section-title">Education</h2>
+                <h2 class="section-title noselect">Education</h2>
                 <div class="section-full">                                           
                         <h3 class="ed-uni"><a href="http://www.kcl.ac.uk/index.aspx" target="_blank">King's College London - University of London</a></h3>
                         <p class="ed-year-top">Sept 2012 - Sept 2013</p> 
@@ -62,7 +64,7 @@
             </div>
 
             <div class="wrapper" id="work-experience">
-                <h2 class="section-title">Work Experience</h2>
+                <h2 class="section-title noselect">Work Experience</h2>
                 <section class="section-full">                    
                         <h3 class="ed-uni"><a href="http://www.army.gr/default.php?pname=kepyes" target="_blank">Centre of Information Technology of the Greek Army (KEPYES)</a></h3>
                         <p class="ed-year-top">Sept 2014 - Jun 2015</p> 
@@ -85,27 +87,36 @@
                 </section>
             </div>
 
-            <div class="wrapper" id="contact">
-                <h2 class="section-title">Get in touch</h2>
-                <section class="section-medium">
-                    <form class="contact" onsubmit="send_message();">
-                        <input type="text" name="firstname" placeholder="Name" required>
-                        <input type="email" name="email" placeholder="Email" required>
-                        <textarea rows="10" name="usrtxt" wrap="soft" placeholder="Message" required></textarea>
-                        <input type="submit" value="Send">
-                    </form>
+            <div class="wrapper" id="interests">
+                <h2 class="section-title noselect">Interests</h2>
+                <section class="section-full">
+       
                 </section>
-                <aside class="section-small">
+            </div> 
+
+            <div class="wrapper" id="contact">
+                <h2 class="section-title noselect">Get in touch</h2>
+                <section class="section-medium">
+                    <p class="ed-description">If you are intersted in my profile or you would like to have more information feel free to contact me!</p>
                     <ul class="social">
                         <li><a class="email" href="mailto:k.tsakmakidis@gmail.com" target="_blank">k.tsakmakidis [at] gmail.com</a></li>
                         <li><a class="linkedin" href="https://www.linkedin.com/in/ktsakmakidis" target="_blank">linkedin.com/in/ktsakmakidis</a></li>
                         <li><a class="skype" href="#skype" target="_blank">KosmasT</a></li>
                         <li><a class="facebook" href="https://www.facebook.com/TsakmakidisKosmas" target="_blank">facebook.com/TsakmakidisKosmas</a></li>                    
                     </ul>
+                </section>
+                <aside class="section-small">
+                    <form class="contact" onsubmit="send_message();">
+                        <input type="text" name="firstname" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea rows="10" name="usrtxt" wrap="soft" placeholder="Message" required></textarea>
+                        <input type="submit" value="Send">
+                    </form>
+   
                 </aside>
             </div>            
             <footer>
-                <p>Kosmas Tsakmakidis &#169; 2015</p>
+                <p>&#169; 2015 Kosmas Tsakmakidis</p>
             </footer>
         </div>
         <script src="./js/jquery-1.11.2.min.js"></script>
