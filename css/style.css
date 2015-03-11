@@ -1,6 +1,7 @@
 * {
 	padding: 0;
 	margin: 0;
+	max-width: 2000px;
 }
 
 .noselect {
@@ -25,7 +26,6 @@ a:hover{
 	.container {
 		background: #eee;
 		position: relative;
-
 	}
 
 	header {
@@ -34,8 +34,36 @@ a:hover{
 		color: #fff;
 		padding: 10px 0 0 0;
 		font-family: "Arial Black", Gadget, sans-serif;
-		background: url("https://cloud.githubusercontent.com/assets/2961492/6550910/70759658-c638-11e4-9d4c-acb8e3093d36.png");
+		background: url("../images/bg.jpg");
 
+	}
+
+	header h2 {
+		color: #6AA7D1;
+		font-weight: bold; 
+		padding: 0 10%;
+		font-family:'Poiret One', cursive;
+		font-size:210%;
+
+	}
+	header span {
+		display: block; 
+		padding: 0 10%; 
+		margin-bottom:10px; 
+		font-size:140%; 
+		font-family:'Poiret One', cursive;
+	}
+
+	div.circular {
+		background: url("../images/kosmas.jpg");
+		background-repeat: no-repeat;
+    	background-position: 50% 30%;
+    	border-radius: 50%;
+    	width: 200px;
+    	height: 200px;
+    	background-size: 100%;
+    	color: #fff;
+    	display: inline-block;
 	}
 
 	nav {
@@ -51,12 +79,13 @@ a:hover{
 		list-style: none;
 	}
 
+
 	nav ul li {
 		float: left;
 		border-top: 5px solid #fff;
 		background: #fff;
 		padding: 5px 10px 10px 10px;	
-		font-family: 'Poiret One', cursive;
+		font-family: 'Roboto', sans-serif;
 		font-weight: bold;
 		font-size: 110%;
 	}
@@ -68,15 +97,29 @@ a:hover{
 		cursor: pointer;
 	}
 
-	nav ul li:hover, nav ul li.active {
+	nav ul li.menu-element a:hover, nav ul li a.active {
 		border-top: 5px solid #6aa7cf;
 	}	
 
-	nav ul li#display-menu {
+	nav ul li#display-menu, nav ul li#display-logo {
 		display: none;
 	}
 
+	nav ul li#display-logo {
+		padding-left:0; 
+		padding-right:50px;
+		font-family: 'Poiret One', cursive;
+		color: #6AA7D1;
+		font-weight: bold;
+		font-size: 130%;
+	}
+
+	#first-element {
+		padding-left: 0;
+	}
+
 	.wrapper {
+		border-radius: 10px;
 		overflow: auto;
 	 	font-family: 'Roboto', sans-serif;
 		margin: 40px auto;
@@ -145,8 +188,8 @@ a:hover{
 	form.contact input[type="text"], form.contact input[type="email"] {
 		display: block;
 		padding: 3px 10px;
-		width: 90%;
-		height: 22px;
+		width: calc(100% - 20px);
+		height: 25px;
 		font-size: 110%;
 		margin-bottom: 15px;
 	}
@@ -154,7 +197,7 @@ a:hover{
 	form.contact textarea {
 		display: block;
 		padding: 3px 10px;
-		width: 90%;
+		width: calc(100% - 20px);
 		font-size: 110%;
 		margin-bottom: 15px;
 		resize: none;
@@ -163,10 +206,10 @@ a:hover{
 
 	form.contact input[type="submit"] {
 		display: block;
-		padding: 7px 10px 7px 50px;
+		padding: 7px 10px 7px 10px;
 		width: auto;
 		font-size: 110%;
-		background: url('https://cloud.githubusercontent.com/assets/2961492/6573859/c52831ca-c727-11e4-9396-3c7582d4a7d8.png') #6aa7cf left 10px top 0px no-repeat; 
+		background: #6aa7cf; 
 		border: 1px solid #ddd;
 		font-family: 'Poiret One', cursive;
 		font-weight: bold;
@@ -183,30 +226,30 @@ a:hover{
 		margin-bottom: 30px;	
 	}
 	ul.social li a.email{
-		background: url('https://cloud.githubusercontent.com/assets/2961492/6573857/c1fd4b02-c727-11e4-9c3c-42a33dcf8c55.png') left 10px top 0px no-repeat;
+		background: url('../images/email.png') left 10px top 0px no-repeat;
 	}
 	ul.social li a.linkedin{
-		background: url('https://cloud.githubusercontent.com/assets/2961492/6573851/ba0836be-c727-11e4-8447-286d6e161e4b.png') left 10px top 0px no-repeat;
+		background: url('../images/linkedin.png') left 10px top 0px no-repeat;
 	}	
 	ul.social li a.facebook{
-		background: url('https://cloud.githubusercontent.com/assets/2961492/6573854/bf2942a0-c727-11e4-84c3-ab26b25f9329.png') left 10px top 0px no-repeat;
+		background: url('../images/facebook.png') left 10px top 0px no-repeat;
 	}		
 	ul.social li a.skype{
-		background: url('https://cloud.githubusercontent.com/assets/2961492/6573861/c8183966-c727-11e4-9a18-0e56db6727f0.png') left 10px top 0px no-repeat;
-	}	
+		background: url('../images/skype.png') left 10px top 0px no-repeat;
+	}
+
+
 	/********** CONTACT STARTS HERE **********/
 
-
 	footer {
-		background: url("https://cloud.githubusercontent.com/assets/2961492/6550910/70759658-c638-11e4-9d4c-acb8e3093d36.png");
+		text-align: center;
+		font-family: 'Roboto', sans-serif;
+		background: url("../images/bg.jpg");
 		width: 80%;
 		height: 100px;
 		color: #fff;
-		padding: 10px 10%;
+		padding: 20px 10% 0 10%;
 	}
-
-
-
 
 @media all and (max-width: 890px) {
 
@@ -244,10 +287,7 @@ a:hover{
 		font-size: 90%;
 	}
 
-	form.contact input[type="text"], , form.contact input[type="email"], form.contact textarea {
-		display: block;
-		width: calc(100% - 20px);
-	}
+
 
 	form.contact input[type="submit"]{ width: 100%; }
 
@@ -255,16 +295,21 @@ a:hover{
 		width: calc(90% - 30px);
 	}	
 
-}
+	header h2, header span {
+		padding: 0 5%;
+	}
 
+	nav {
+		width: 90%;
+		padding: 0 5%;
+	}
 
-@media all and (max-width: 400px) {
-	
 	nav ul li {
 		float: none;
 		display: none;
 		margin: 5px 0;
 		text-align: left;
+		padding-left: 0;
 	}
 
 	nav ul li:hover {
@@ -272,18 +317,23 @@ a:hover{
 	}
 
 	nav ul li#display-menu {
-		display: list-item;
+		display: inline-block;
 	}
 
-	header {
-		height: 150px;
+	nav ul li#display-logo {
+		padding-right: 0;
 	}
-
 
 	.wrapper {
 		width: calc(90% - 30px);
 	}
 
+
+}
+
+
+@media all and (max-width: 400px) {
+	
 
 
 }
