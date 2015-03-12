@@ -4,6 +4,15 @@
 	max-width: 2000px;
 }
 
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover{
+	color: #6aa7cf;
+}
+
 .noselect {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -14,109 +23,119 @@
     cursor: default;
 }
 
-a {
-	text-decoration: none;
-	color: inherit;
+.container {
+	background: #eee;
+	position: relative;
 }
 
-a:hover{
-	color: #6aa7cf;
+header {
+	position: relative;
+	width: 100%;
+	color: #fff;
+	padding: 10px 0 0 0;
+	font-family: "Arial Black", Gadget, sans-serif;
+	background: url("https://cloud.githubusercontent.com/assets/2961492/6599779/565be3e8-c814-11e4-8d9c-9f1d12201856.jpg");
 }
 
-	.container {
-		background: #eee;
-		position: relative;
-	}
+header h2 {
+	max-width: 800px;
+	margin: 0 auto;
+	color: #6AA7D1;
+	font-weight: bold; 
+	padding: 0 10%;
+	font-family:'Poiret One', cursive;
+	font-size:210%;
+}
+	
+header span {
+	max-width: 800px;
+	margin: 0 auto 10px auto;		
+	display: block; 
+	padding: 0 10%; 
+	font-size:140%; 
+	font-family:'Poiret One', cursive;
+}
+nav {
+	overflow: auto;
+	background: #fff;
+	width: 80%;
+	padding: 0 10%;
+	box-shadow: 0px 5px 20px #888888;
+	display: block;
+}
 
-	header {
-		position: relative;
-		width: 100%;
-		color: #fff;
-		padding: 10px 0 0 0;
-		font-family: "Arial Black", Gadget, sans-serif;
-		background: url("https://cloud.githubusercontent.com/assets/2961492/6599779/565be3e8-c814-11e4-8d9c-9f1d12201856.jpg");
-
-	}
-
-	header h2 {
-		color: #6AA7D1;
-		font-weight: bold; 
-		padding: 0 10%;
-		font-family:'Poiret One', cursive;
-		font-size:210%;
-
-	}
-	header span {
-		display: block; 
-		padding: 0 10%; 
-		margin-bottom:10px; 
-		font-size:140%; 
-		font-family:'Poiret One', cursive;
-	}
-
-	div.circular {
-		background: url("https://cloud.githubusercontent.com/assets/2961492/6599781/58bddc18-c814-11e4-9f4f-d79203469044.jpg");
-		background-repeat: no-repeat;
-    	background-position: 50% 30%;
-    	border-radius: 50%;
-    	width: 200px;
-    	height: 200px;
-    	background-size: 100%;
-    	color: #fff;
-    	display: inline-block;
-	}
-
-	nav {
+nav ul {
 		overflow: auto;
-		background: #fff;
-		width: 80%;
-		padding: 0 10%;
-		box-shadow: 0px 5px 20px #888888;
+		max-width: 800px;
 		display: block;
-	}
-
-	nav ul {
+		margin: 0 auto;
 		list-style: none;
-	}
+}
 
 
-	nav ul li {
-		float: left;
-		border-top: 5px solid #fff;
-		background: #fff;
-		padding: 5px 10px 10px 10px;	
-		font-family: 'Roboto', sans-serif;
-		font-weight: bold;
-		font-size: 110%;
-	}
+nav ul li {
+	float: left;
+	background: #fff;
+	padding: 15px 10px 10px 10px;	
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 95%;
+}
 
-	nav ul li a{
-		
-		text-transform: uppercase;
-		color: #000;
-		cursor: pointer;
-	}
+nav ul li a{	
+	text-transform: uppercase;
+	color: #000;
+	cursor: pointer;
+}
 
-	nav ul li.menu-element a:hover, nav ul li a.active {
-		border-top: 5px solid #6aa7cf;
-	}	
+nav ul li a.active {
+	color: #6AA7D1;
+}	
 
-	nav ul li#display-menu, nav ul li#display-logo {
-		display: none;
-	}
+nav ul li#display-menu, nav ul li#display-logo {
+	display: none;
+	padding: 10px 10px 10px 0;
+}
 
-	nav ul li#display-logo {
-		padding-left:0; 
-		padding-right:50px;
-		font-family: 'Poiret One', cursive;
-		color: #6AA7D1;
-		font-weight: bold;
-		font-size: 130%;
-	}
+nav ul li#display-logo {
+	padding-right:50px;
+	font-family: 'Poiret One', cursive;
+	color: #6AA7D1;
+	font-weight: bold;
+	font-size: 130%;
+}
 
-	#first-element {
-		padding-left: 0;
-	}
+#first-element {
+	padding-left: 0;
+}
+
+/********** WELCOME SECTION STARTS HERE **********/
+
+div.circular {
+	background: url("https://scontent-vie.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/1014065_426881090791919_329565284_n.jpg?oh=3908b84e6382ba40f0a8b1851b860eb5&oe=558CE139");
+	background-repeat: no-repeat;
+   	background-position: 50% 30%;
+   	border-radius: 50%;
+   	width: 200px;
+   	height: 200px;
+   	background-size: 100%;
+   	color: #fff;
+   	display: inline-block;
+   	float: left;
+   	margin: 0 auto 20px auto;
+}
+
+p.welcome-text {
+	display: inline-block; 
+	padding-left: 15px;
+	width: calc(100% - 215px);
+	color: #888;
+	float: left;
+}
+
+/********** WELCOME SECTION ENDS HERE **********/
+
+
 
 	.wrapper {
 		border-radius: 10px;
@@ -129,6 +148,7 @@ a:hover{
 
 		font-size: 110%;
 		min-height: 300px;
+		max-width: 800px;
 
 		/*border: 1px solid #888888;*/
 		box-shadow: 0px 0px 10px #888888;
@@ -151,7 +171,7 @@ a:hover{
 	.section-title {
 		font-family: 'Poiret One', cursive;
 		font-weight: bold;
-		font-size: 210%;
+		font-size: 175%;
 		border-bottom: 2px dotted;
 		margin: 0 0 20px 0;
 		width: auto;
@@ -206,6 +226,7 @@ a:hover{
 
 	form.contact input[type="submit"] {
 		display: block;
+		float: right;
 		padding: 7px 10px 7px 10px;
 		width: auto;
 		font-size: 110%;
@@ -287,6 +308,16 @@ a:hover{
 		font-size: 90%;
 	}
 
+	div.circular {
+    	float: none;
+    	display: block;
+	}
+
+	p.welcome-text {
+		display: block;
+		width: 100%;
+		padding:0;
+	}
 
 
 	form.contact input[type="submit"]{ width: 100%; }
@@ -310,10 +341,6 @@ a:hover{
 		margin: 5px 0;
 		text-align: left;
 		padding-left: 0;
-	}
-
-	nav ul li:hover {
-		border-top: 5px solid #fff;
 	}
 
 	nav ul li#display-menu {
