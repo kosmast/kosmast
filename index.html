@@ -2,9 +2,8 @@
 <html>
     <head>
         <title>Kosmas Tsakmakidis - Web Developer</title>
-
-        <meta name=viewport content="width=device-width, initial-scale=1.0">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name=viewport content="width=device-width, initial-scale=1.0">   
         <meta name="description" content="Kosmas Tsakmakidis - Web Developer - Greece"/>
         <meta name="keywords" content="Web Developer, PHP, HTML5, CSS3, jQuery, Greece, greek ,kosmas tsakmakidis , kosmast"/>
         <meta name="author" content="Kosmas Tsakmakidis" />
@@ -36,14 +35,15 @@ window.location.assign("http://www.google.com");
                 </nav>
             </header>
 
-            <div class="wrapper">
+            <section class="wrapper">
                 <h2 class="section-title noselect">Welcome</h2>
-                <section class="section-medium">
+                <div class="section-full">
                     <div class="circular"></div>
-                </section>
-            </div>              
+                    <p class="welcome-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+            </section>              
 
-            <div class="wrapper" id="education">
+            <section class="wrapper" id="education">
                 <h2 class="section-title noselect">Education</h2>
                 <div class="section-full">                                           
                         <h3 class="ed-uni"><a href="http://www.kcl.ac.uk/index.aspx" target="_blank">King's College London - University of London</a></h3>
@@ -61,11 +61,11 @@ window.location.assign("http://www.google.com");
                         <p class="ed-description">Sample Cources: Implementation of Database Systems, Operating Systems, Software Development, System Programming, Theory of Computation, Design and Use of Databases, Artificial Intelligence, Logic Programming, Human Computer Interaction, Internet Application Technology, Computer Science Didactics  
                         </p>                               
                 </div>
-            </div>
+            </section>
 
-            <div class="wrapper" id="work-experience">
+            <section class="wrapper" id="work-experience">
                 <h2 class="section-title noselect">Work Experience</h2>
-                <section class="section-full">                    
+                <div class="section-full">                    
                         <h3 class="ed-uni"><a href="http://www.army.gr/default.php?pname=kepyes" target="_blank">Centre of Information Technology of the Greek Army (KEPYES)</a></h3>
                         <p class="ed-year-top">Sept 2014 - Jun 2015</p> 
                         <p class="ed-title"><a href="http://www.army.gr/default.php?pname=kepyes" target="_blank">Full-Stack Web Developer</a><span class="ed-year">Sept 2014 - Jun 2015</span></p>
@@ -84,19 +84,12 @@ window.location.assign("http://www.google.com");
                         <p class="ed-year-top">Nov 2013 - Jun 2014</p> 
                         <p class="ed-title"><a href="http://reloadgreece.com/" target="_blank">Web Developer and IT Support (Volunteer)</a><span class="ed-year">Nov 2013 - Jun 2014</span></p> 
                         <p class="ed-description">Primary role: Adding new features/functionality and editing the existing content on the website using Joomla CMS</p>   
-                </section>
-            </div>
+                </div>
+            </section>
 
-            <div class="wrapper" id="interests">
-                <h2 class="section-title noselect">Interests</h2>
-                <section class="section-full">
-       
-                </section>
-            </div> 
-
-            <div class="wrapper" id="contact">
+            <section class="wrapper" id="contact">
                 <h2 class="section-title noselect">Get in touch</h2>
-                <section class="section-medium">
+                <div class="section-medium">
                     <p class="ed-description">If you are intersted in my profile or you would like to have more information feel free to contact me!</p>
                     <ul class="social">
                         <li><a class="email" href="mailto:k.tsakmakidis@gmail.com" target="_blank">k.tsakmakidis [at] gmail.com</a></li>
@@ -104,8 +97,8 @@ window.location.assign("http://www.google.com");
                         <li><a class="skype" href="#skype" target="_blank">KosmasT</a></li>
                         <li><a class="facebook" href="https://www.facebook.com/TsakmakidisKosmas" target="_blank">facebook.com/TsakmakidisKosmas</a></li>                    
                     </ul>
-                </section>
-                <aside class="section-small">
+                </div>
+                <div class="section-small">
                     <form class="contact" onsubmit="send_message();">
                         <input type="text" name="firstname" placeholder="Name" required>
                         <input type="email" name="email" placeholder="Email" required>
@@ -113,8 +106,8 @@ window.location.assign("http://www.google.com");
                         <input type="submit" value="Send">
                     </form>
    
-                </aside>
-            </div>            
+                </div>
+            </section>            
             <footer>
                 <p>&#169; 2015 Kosmas Tsakmakidis</p>
             </footer>
