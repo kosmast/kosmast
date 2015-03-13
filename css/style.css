@@ -9,7 +9,7 @@ a {
 	color: inherit;
 }
 
-a:hover{
+a:hover {
 	color: #6aa7cf;
 }
 
@@ -24,8 +24,16 @@ a:hover{
 }
 
 .container {
-	background: #eee;
+	background: url("https://cloud.githubusercontent.com/assets/2961492/6638451/cc673f08-c98e-11e4-990b-06cd2e956838.png") ;
+
+	/*background: #eee;*/
+	/*
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
 	position: relative;
+	*/
 }
 
 header {
@@ -34,7 +42,7 @@ header {
 	color: #fff;
 	padding: 10px 0 0 0;
 	font-family: "Arial Black", Gadget, sans-serif;
-	background: url("https://cloud.githubusercontent.com/assets/2961492/6599779/565be3e8-c814-11e4-8d9c-9f1d12201856.jpg");
+	background: url("https://cloud.githubusercontent.com/assets/2961492/6638401/6c74bcc4-c98e-11e4-9f8f-2cede149e611.png") ;
 }
 
 header h2 {
@@ -65,11 +73,11 @@ nav {
 }
 
 nav ul {
-		overflow: auto;
-		max-width: 800px;
-		display: block;
-		margin: 0 auto;
-		list-style: none;
+	overflow: auto;
+	max-width: 800px;
+	display: block;
+	margin: 0 auto;
+	list-style: none;
 }
 
 
@@ -136,224 +144,220 @@ p.welcome-text {
 /********** WELCOME SECTION ENDS HERE **********/
 
 
+.wrapper {
+	border-radius: 10px;
+	overflow: auto;
+ 	font-family: 'Roboto', sans-serif;
+	margin: 40px auto;
+	background: #fff;
+	width: calc(80% - 30px);
+	font-size: 110%;
+	min-height: 300px;
+	max-width: 800px;
+	/*border: 1px solid #888888;*/
+	box-shadow: 0px 0px 10px #888888;
+	padding: 10px 15px;
+}
 
-	.wrapper {
-		border-radius: 10px;
-		overflow: auto;
-	 	font-family: 'Roboto', sans-serif;
-		margin: 40px auto;
-		background: #fff;
+.section-medium {
+	width: calc(50% - 15px);
+	margin-right: 15px;
+	float: left;
+	display: inline-block;
+}
 
-		width: calc(80% - 30px);
+.section-small {
+	float: left;
+	display: inline-block;
+	width: 50%;
+}	
 
-		font-size: 110%;
-		min-height: 300px;
-		max-width: 800px;
+.section-title {
+	font-family: 'Poiret One', cursive;
+	font-weight: bold;
+	font-size: 175%;
+	border-bottom: 2px dotted;
+	margin: 0 0 20px 0;
+	width: auto;
+	color: #6aa7cf;
+}
 
-		/*border: 1px solid #888888;*/
-		box-shadow: 0px 0px 10px #888888;
-		padding: 10px 15px;
-	}
+/********** EDUCATION STARTS HERE **********/
+.ed-year {
+	float: right;
+	font-weight: normal;
+	color: #888;
+}
 
-	.section-medium {
-		width: calc(50% - 15px);
-		margin-right: 15px;
-		float: left;
-		display: inline-block;
-	}
+.ed-year-top {
+	display: none;
+}
 
-	.section-small {
-		float: left;
-		display: inline-block;
-		width: 50%;
-	}	
+.ed-title {
+	font-weight: bold;
+	margin: 10px 0;
+	color: #6aa7cf;
+}
 
-	.section-title {
-		font-family: 'Poiret One', cursive;
-		font-weight: bold;
-		font-size: 175%;
-		border-bottom: 2px dotted;
-		margin: 0 0 20px 0;
-		width: auto;
-		color: #6aa7cf;
-	}
-
-	/********** EDUCATION STARTS HERE **********/
-	.ed-year {
-		float: right;
-		font-weight: normal;
-		color: #888;
-	}
-
-	.ed-year-top {
-		display: none;
-	}
-
-	.ed-title {
-		font-weight: bold;
-		margin: 10px 0;
-		color: #6aa7cf;
-	}
-
-	.ed-description {
-		margin-bottom: 20px; 
-		text-align: justify;
-		color: #888;
-	}
-
-	/********** EDUCATION ENDS HERE **********/
-
-	/********** CONTACT STARTS HERE **********/
-
-	form.contact input[type="text"], form.contact input[type="email"] {
-		display: block;
-		padding: 3px 10px;
-		width: calc(100% - 20px);
-		height: 25px;
-		font-size: 110%;
-		margin-bottom: 15px;
-	}
-
-	form.contact textarea {
-		display: block;
-		padding: 3px 10px;
-		width: calc(100% - 20px);
-		font-size: 110%;
-		margin-bottom: 15px;
-		resize: none;
-		font-family: inherit;
-	}
-
-	form.contact input[type="submit"] {
-		display: block;
-		float: right;
-		padding: 7px 10px 7px 10px;
-		width: auto;
-		font-size: 110%;
-		background: #6aa7cf; 
-		border: 1px solid #ddd;
-		font-family: 'Poiret One', cursive;
-		font-weight: bold;
-	}
-
-	ul.social {
-		list-style: none;
-		color: #888;
-	}
-
-	ul.social li a {
-		display: block;
-		padding: 7px 0 7px 50px;
-		margin-bottom: 30px;	
-	}
-	ul.social li a.email{
-		background: url('https://cloud.githubusercontent.com/assets/2961492/6573857/c1fd4b02-c727-11e4-9c3c-42a33dcf8c55.png') left 10px top 0px no-repeat;
-	}
-	ul.social li a.linkedin{
-		background: url('https://cloud.githubusercontent.com/assets/2961492/6573851/ba0836be-c727-11e4-8447-286d6e161e4b.png') left 10px top 0px no-repeat;
-	}	
-	ul.social li a.facebook{
-		background: url('https://cloud.githubusercontent.com/assets/2961492/6573854/bf2942a0-c727-11e4-84c3-ab26b25f9329.png') left 10px top 0px no-repeat;
-	}		
-	ul.social li a.skype{
-		background: url('https://cloud.githubusercontent.com/assets/2961492/6573861/c8183966-c727-11e4-9a18-0e56db6727f0.png') left 10px top 0px no-repeat;
-	}
+.ed-description {
+	margin-bottom: 20px; 
+	text-align: justify;
+	color: #888;
+}
+/********** EDUCATION ENDS HERE **********/
 
 
-	/********** CONTACT STARTS HERE **********/
+/********** CONTACT STARTS HERE **********/
 
-	footer {
-		text-align: center;
-		font-family: 'Roboto', sans-serif;
-		background: url("https://cloud.githubusercontent.com/assets/2961492/6599779/565be3e8-c814-11e4-8d9c-9f1d12201856.jpg");
-		width: 80%;
-		height: 100px;
-		color: #fff;
-		padding: 20px 10% 0 10%;
-	}
+form.contact input[type="text"], form.contact input[type="email"] {
+	display: block;
+	padding: 3px 10px;
+	width: calc(100% - 20px);
+	height: 25px;
+	font-size: 110%;
+	margin-bottom: 15px;
+}
+
+form.contact textarea {
+	display: block;
+	padding: 3px 10px;
+	width: calc(100% - 20px);
+	font-size: 110%;
+	margin-bottom: 15px;
+	resize: none;
+	font-family: inherit;
+}
+
+form.contact input[type="submit"] {
+	display: block;
+	float: right;
+	padding: 7px 10px 7px 10px;
+	width: auto;
+	font-size: 110%;
+	background: #6aa7cf; 
+	border: 1px solid #ddd;
+	font-family: 'Poiret One', cursive;
+	font-weight: bold;
+}
+	
+ul.social {
+	list-style: none;
+	color: #888;
+}
+
+ul.social li a {
+	display: block;
+	padding: 7px 0 7px 50px;
+	margin-bottom: 30px;	
+}
+
+ul.social li a.email{
+	background: url('https://cloud.githubusercontent.com/assets/2961492/6573857/c1fd4b02-c727-11e4-9c3c-42a33dcf8c55.png') left 10px top 0px no-repeat;
+}
+	
+ul.social li a.linkedin{
+	background: url('https://cloud.githubusercontent.com/assets/2961492/6573851/ba0836be-c727-11e4-8447-286d6e161e4b.png') left 10px top 0px no-repeat;
+}	
+	
+ul.social li a.facebook{
+	background: url('https://cloud.githubusercontent.com/assets/2961492/6573854/bf2942a0-c727-11e4-84c3-ab26b25f9329.png') left 10px top 0px no-repeat;
+}		
+
+ul.social li a.skype{
+	background: url('https://cloud.githubusercontent.com/assets/2961492/6573861/c8183966-c727-11e4-9a18-0e56db6727f0.png') left 10px top 0px no-repeat;
+}
+
+
+/********** CONTACT STARTS HERE **********/
+
+footer {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	background: url("https://cloud.githubusercontent.com/assets/2961492/6638401/6c74bcc4-c98e-11e4-9f8f-2cede149e611.png") ;
+	width: 80%;
+	height: 100px;
+	color: #fff;
+	padding: 20px 10% 0 10%;
+}
 
 @media all and (max-width: 890px) {
 
-	/********** EDUCATION STARTS HERE **********/
-	.ed-year{
-		display: none;
-	}
-	.ed-year-top{
-		display: block;
-		padding: 10px 0 0 0;
-		text-align: center;
-	}
-	.ed-uni, .ed-title {
-		text-align: center;
-	}
+/********** EDUCATION STARTS HERE **********/
+.ed-year{
+	display: none;
+}
+.ed-year-top{
+	display: block;
+	padding: 10px 0 0 0;
+	text-align: center;
+}
+.ed-uni, .ed-title {
+	text-align: center;
+}
+/********** EDUCATION ENDS HERE **********/
 
+.section-full {
+	font-size: 90%;
+}
 
+.section-medium {
+	width: 100%;
+	margin-right:0; 
+	display: block;
+	font-size: 90%;
+}
+.section-small {
+	margin-top: 20px;
+	width: 100%;
+	display: block;
+	font-size: 90%;
+}
 
-	/********** EDUCATION ENDS HERE **********/
+div.circular {
+   	float: none;
+   	display: block;
+}
 
-	.section-full {
-		font-size: 90%;
-	}
+p.welcome-text {
+	display: block;
+	width: 100%;
+	padding:0;
+}
 
-	.section-medium {
-		width: 100%;
-		margin-right:0; 
-		display: block;
-		font-size: 90%;
-	}
-	.section-small {
-		margin-top: 20px;
-		width: 100%;
-		display: block;
-		font-size: 90%;
-	}
+form.contact input[type="submit"]{ width: 100%; }
 
-	div.circular {
-    	float: none;
-    	display: block;
-	}
+.wrapper {
+	width: calc(90% - 30px);
+}	
 
-	p.welcome-text {
-		display: block;
-		width: 100%;
-		padding:0;
-	}
+header h2, header span {
+	padding: 0 5%;
+}
 
+nav {
+	width: 90%;
+	padding: 0 5%;
+}
 
-	form.contact input[type="submit"]{ width: 100%; }
+nav ul li {
+	float: none;
+	display: none;
+	margin: 5px 0;
+	text-align: left;
+	padding-left: 0;
+}
 
-	.wrapper {
-		width: calc(90% - 30px);
-	}	
+nav ul li#display-menu {
+	display: inline-block;
+}
 
-	header h2, header span {
-		padding: 0 5%;
-	}
+nav ul li#display-logo {
+	padding-right: 0;
+}
 
-	nav {
-		width: 90%;
-		padding: 0 5%;
-	}
-
-	nav ul li {
-		float: none;
-		display: none;
-		margin: 5px 0;
-		text-align: left;
-		padding-left: 0;
-	}
-
-	nav ul li#display-menu {
-		display: inline-block;
-	}
-
-	nav ul li#display-logo {
-		padding-right: 0;
-	}
-
-	.wrapper {
-		width: calc(90% - 30px);
-	}
+.wrapper {
+	width: calc(90% - 30px);
+}
 
 
 }
