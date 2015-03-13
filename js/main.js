@@ -3,7 +3,6 @@ $(document).scroll(function() {
 	var nn = $('nan').height();
 	var re = hh - nn;
     var windscroll = $(this).scrollTop();
-    
     if (windscroll > re) {
 		$('nav').css('position', 'fixed');
 		$('nav').css('top', '0');
@@ -13,40 +12,35 @@ $(document).scroll(function() {
         $('nav').css('position', 'static');
         $('#display-logo').css('display', 'none');
     }
-
 });
 
 
 $(document).ready(function() {
-  $('.wrapper').mouseenter(function() {
-  	$('nav ul li a.active').removeClass('active');
-    $('nav ul li a[href="#'+$(this).attr('id')+'"]').addClass('active');
-  });
-
-  $('nav ul li a').click(function(e) {
-  	e.preventDefault();
-  	if ($('#display-menu').is(':visible')) {  
-		$("nav ul li.menu-element").hide();
-	}
-    $(this).addClass('active').siblings('nav a').removeClass('active');
-    var dis = $($(this).attr('href')).offset().top -80;
-    $('html, body').animate({ scrollTop:  dis + 'px' }, 800, 'linear');    
-  });
-
+  	$('.wrapper').mouseenter(function() {
+  		$('nav ul li a.active').removeClass('active');
+    	$('nav ul li a[href="#'+$(this).attr('id')+'"]').addClass('active');
+  	});
+  	$('nav ul li a').click(function(e) {
+  		e.preventDefault();
+  		if ($('#display-menu').is(':visible')) {  
+			$("nav ul li.menu-element").hide();
+		}
+    	$(this).addClass('active').siblings('nav a').removeClass('active');
+    	var dis = $($(this).attr('href')).offset().top -80;
+    	$('html, body').animate({ scrollTop:  dis + 'px' }, 800, 'swing');    
+  	});
 	$('body').click(function(){
 		if ($('.menu-element').is(':visible') && $('#display-menu').is(':visible')) {  
 			$("nav ul li.menu-element").hide();
 		}
 	});
 	$('#display-menu').click(function(event){
-		 event.stopPropagation();
+		event.stopPropagation();
 		$("nav ul li.menu-element").toggle();
 	});	
-
 });
 
 function send_message() {
-
 	var name = $('form.contact').find('input[name=firstname]').val();
 	var email = $('form.contact').find('input[name=email]').val();
 	var textarea = $('form.contact textarea').val();
