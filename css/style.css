@@ -145,7 +145,7 @@ p.welcome-text {
 
 
 .wrapper {
-	border-radius: 10px;
+	/*border-radius: 10px;*/
 	overflow: auto;
  	font-family: 'Roboto', sans-serif;
 	margin: 40px auto;
