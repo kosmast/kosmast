@@ -51,6 +51,11 @@ header {
 }
 
 /* about starts here */
+.social-wrapper {
+	margin:0 auto; 
+	width: 368px;
+}
+
 a.social {
 	display: inline-block;
 	float: left;
@@ -62,7 +67,7 @@ a.social {
   background-repeat: no-repeat;
   background-position: 50% 30%;
   border-radius: 50%;
-  width: 200px;
+ 	width: 200px;
   height: 200px;
   background-size: 100%;
   color: #fff;
@@ -88,3 +93,29 @@ form textarea {
 	text-shadow: 0 0 0;
 }
 /* contact ends here */
+
+
+
+@media all and (max-width: 400px) {
+	
+	.photo {
+		width: 100px;
+		height: 100px;
+	}
+
+	a.social img{
+		width: 32px;
+		height: 32px;
+	}	
+
+	a.social{
+		margin-top: 30px;
+		width: 32px;
+		height: 32px;
+	}
+
+	.social-wrapper {
+		width: 204px;
+	}
+
+}
