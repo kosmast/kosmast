@@ -1,0 +1,32 @@
+#canvas {
+  border: 2px solid;
+  width: 1000px;
+  height: 500px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+}
+
+#canvas img {
+  position: absolute;
+  cursor: move;
+}
+
+#image-1 {
+  top: 0;
+  left: 200px;
+}
+
+#image-2 {
+  top: 100px;
+  left: 400px;
+}
+
+
+button {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+
+}
