@@ -40,43 +40,32 @@ $(document).ready(function() {
 	});	
 });
 
-function send_message() {
-	var name = $('form.contact').find('input[name=firstname]').val();
-	var email = $('form.contact').find('input[name=email]').val();
-	var textarea = $('form.contact textarea').val();
-	alert(email);
+function postToGoogle() {
+  var name = $('form.contact').find('input[name=firstname]').val();
+  var email = $('form.contact').find('input[name=email]').val();
+  var textarea = $('form.contact textarea').val();
 
-	var xmlHttp;
-	try {
-		xmlHttp = new XMLHttpRequest();
-	}
-	catch(e) {
-		try {
-			xmlHttp = new ActiveXObject("Msxml12.XMLHTTP");
-		}
-		catch(e){
-			try {
-				xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
-			}
-			catch (e){
-				alert("Your browser does not support AJAX!");
-				return false;
-			}
-		}
-	}
-
-	xmlHttp.onreadystatechange = function()
-	{
-		if(xmlHttp.readyState == 3){
-			//$('.container').css('background', 'red');
-		}		
-		if(xmlHttp.readyState == 4){
-			//$('.container').css('background', 'green');
-		}
-	}
-	
-
-	xmlHttp.open('GET', 'index.html', true);
-	xmlHttp.send(null);
-
+  $.ajax({
+      url: "https://docs.google.com/forms/d/1HBUmErjfiGzMiiY2QGc74by5gEo1FIqCueFT4oOsHJ0/formResponse",
+      data: {"entry.972960205": name, "entry.1828187370": email, "entry.839866249": textarea},
+      type: "POST",
+      dataType: "xmlp",
+      statusCode: {
+          0: function() {
+            $('form.contact p').html("");
+          },
+          200: function() {
+            $('form.contact p').html("");
+          }
+      }
+  });
 }
+
+$(document).ready(function(){
+  $('form.contact').submit(function() {
+      postToGoogle();
+      $('form.contact p').html("Thank you for your message!");
+      return false;
+  });
+});
+
