@@ -243,28 +243,36 @@ form.contact input[type="submit"] {
 ul.social {
 	list-style: none;
 	color: #888;
+	margin-bottom: 20px;
+	text-align: center;
 }
 
+ul.social li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+
 ul.social li a {
-	display: block;
-	padding: 7px 0 7px 50px;
-	margin-bottom: 30px;	
+	display: inline-block;
+	width: 32px;
+	height: 32px;
 }
 
 ul.social li a.email{
-	background: url('https://cloud.githubusercontent.com/assets/2961492/6573857/c1fd4b02-c727-11e4-9c3c-42a33dcf8c55.png') left 10px top 0px no-repeat;
+	background: url('https://cloud.githubusercontent.com/assets/2961492/14985463/3c1781f0-1150-11e6-97ff-dda805972847.png') no-repeat;
 }
 	
 ul.social li a.linkedin{
-	background: url('https://cloud.githubusercontent.com/assets/2961492/6573851/ba0836be-c727-11e4-8447-286d6e161e4b.png') left 10px top 0px no-repeat;
+	background: url('https://cloud.githubusercontent.com/assets/2961492/14985453/31c6b55e-1150-11e6-8993-622aaed75eb2.png') no-repeat;
 }	
 	
 ul.social li a.facebook{
-	background: url('https://cloud.githubusercontent.com/assets/2961492/6573854/bf2942a0-c727-11e4-84c3-ab26b25f9329.png') left 10px top 0px no-repeat;
+	background: url('https://cloud.githubusercontent.com/assets/2961492/14985460/35f5de2a-1150-11e6-8adc-e0a8a2777e2a.png') no-repeat;
 }		
 
 ul.social li a.skype{
-	background: url('https://cloud.githubusercontent.com/assets/2961492/6573861/c8183966-c727-11e4-9a18-0e56db6727f0.png') left 10px top 0px no-repeat;
+	background: url('https://cloud.githubusercontent.com/assets/2961492/14985441/27c6668a-1150-11e6-9ae0-1d0880dc8f2f.png') no-repeat;
 }
 
 
@@ -274,10 +282,8 @@ footer {
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
 	background: url("https://cloud.githubusercontent.com/assets/2961492/6998258/f94f4932-dbe2-11e4-8487-cf4f50a90105.png") ;
-	width: 80%;
-	height: 100px;
 	color: #fff;
-	padding: 20px 10% 0 10%;
+	padding: 20px 10%;
 }
 
 @media all and (max-width: 890px) {
