@@ -10,6 +10,8 @@
 #canvas img {
   position: absolute;
   cursor: move;
+  width: 10%;
+  height: 10%;
 }
 
 #image-1 {

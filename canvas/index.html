@@ -10,9 +10,7 @@
 
 
 <section id="canvas" width="1000" height="500">
-  <img src="http://icons.iconarchive.com/icons/iconshock/real-vista-education/72/music-icon.png" id="image-1" data-sound="http://www.telacommunications.com/nutshell/music/sounds-mp3/note1o.mp3" />
-  <img src="http://icons.iconarchive.com/icons/babasse/old-school/72/music-icon.png" id="image-2" data-sound="http://www.telacommunications.com/nutshell/music/sounds-mp3/note6o.mp3" />
-  <img src="http://icons.iconarchive.com/icons/treetog/junior/72/document-audio-icon.png" id="image-3" data-sound="http://www.telacommunications.com/nutshell/music/sounds-mp3/note9o.mp3" />
+
 </section>
 
 <button onclick="playAll()">Play</button>
@@ -60,7 +58,7 @@ function playAll() {
         if (i < sorted_elements.length) {   
            myLoop();             //  ..  again which will trigger another 
         }                        //  ..  setTimeout()
-     }, 500)
+     }, 100)
   }
   myLoop(); 
 
@@ -74,10 +72,17 @@ function playSound(element) {
 }
 
 $(document).ready(function() {
+  loadImages();
   makeElementsDraggable();
   playSoundOnHover();
   
 });
 
+function loadImages(){
+  for (var i = 1; i <= 60; i++) { 
+    var num = Math.floor(Math.random() * 12) + 1 ;
+    $("#canvas").append("<img src='images/" + i + ".png' id='image-" + i + "' data-sound='http://www.telacommunications.com/nutshell/music/sounds-mp3/note" + num + "s.mp3' />");
+  }
+}
 </script>
 </html>
