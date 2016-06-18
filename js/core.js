@@ -1,3 +1,7 @@
+$(document).ready(function() {
+  $("#slideshow").load("slideshow.html"); 
+});
+
 function postContactToGoogle() {
   var name = $('#name').val();
   var email = $('#email').val();

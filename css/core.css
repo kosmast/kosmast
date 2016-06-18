@@ -22,6 +22,7 @@ body {
 
 /* header starts here */
 header {
+	overflow: auto;
 	text-align: center;
 }
 
@@ -39,6 +40,11 @@ header {
 	margin-top: -10px;
 }
 
+.social-wrapper {
+	margin: 10px auto; 
+	width: 264px;
+	overflow: auto;
+}
 /* header ends here */
 
 .content {
@@ -48,18 +54,17 @@ header {
 
 .box {
 	padding: 20px;
+	margin: 10px 0;
+	overflow: auto;
 }
 
 /* about starts here */
-.social-wrapper {
-	margin:0 auto; 
-	width: 368px;
-}
+
 
 a.social {
 	display: inline-block;
 	float: left;
-	margin-top: 60px;
+	margin: 0 10px;
 }
 
 .photo {
@@ -109,13 +114,12 @@ form textarea {
 	}	
 
 	a.social{
-		margin-top: 30px;
 		width: 32px;
 		height: 32px;
 	}
 
 	.social-wrapper {
-		width: 204px;
+		width: 156px;
 	}
 
 }
