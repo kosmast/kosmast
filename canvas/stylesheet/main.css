@@ -30,3 +30,8 @@ button {
   height: 50px;
 
 }
+
+.copyright {
+  text-align: center;
+  font-weight: bold;
+}
