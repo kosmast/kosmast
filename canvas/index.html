@@ -5,84 +5,17 @@
   <link rel="stylesheet" type="text/css" href="stylesheet/main.css">
   <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
   <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="./javascripts/scripts.js"></script>
 </head>
 <body>
 
 
-<section id="canvas" width="1000" height="500">
-
-</section>
+<section id="canvas" width="1000" height="500"></section>
 
 <button onclick="playAll()">Play</button>
 
 
 
 </body>
-<script type="text/javascript">
 
-function makeElementsDraggable() {
-  $('#canvas img').draggable({
-    containment: "#canvas",
-  });
-}
-
-function playSoundOnHover() {
-  $( "#canvas img" ).mouseover(function() { 
-    playSound($(this));
-  });
-}
-
-function sortElements() {
-  var elements = [];
-  $( "#canvas img" ).each(function( index ) {
-    var position = $(this).position();
-    elements.push([$(this).attr("id"), position.left, position.top]);
-  });
-
-  elements.sort(function(a, b) {
-      return a[1] - b[1];
-  });
-
-  return elements;
-}
-
-function playAll() {
-  var sorted_elements = sortElements();
-
-  var i = 0;                     //  set your counter to 1
-  function myLoop () {           //  create a loop function
-     setTimeout(function () {    //  call a 3s setTimeout when the loop is called
-        var element = $("#" + sorted_elements[i][0]);
-        playSound(element);          //  your code here
-        i++;                     //  increment the counter
-        if (i < sorted_elements.length) {   
-           myLoop();             //  ..  again which will trigger another 
-        }                        //  ..  setTimeout()
-     }, 100)
-  }
-  myLoop(); 
-
-
-}
-
-function playSound(element) {
-  var audioElement = document.createElement('audio');
-  audioElement.setAttribute('src', element.data("sound"));
-  audioElement.play();  
-}
-
-$(document).ready(function() {
-  loadImages();
-  makeElementsDraggable();
-  playSoundOnHover();
-  
-});
-
-function loadImages(){
-  for (var i = 1; i <= 60; i++) { 
-    var num = Math.floor(Math.random() * 12) + 1 ;
-    $("#canvas").append("<img src='images/" + i + ".png' id='image-" + i + "' data-sound='http://www.telacommunications.com/nutshell/music/sounds-mp3/note" + num + "s.mp3' />");
-  }
-}
-</script>
 </html>

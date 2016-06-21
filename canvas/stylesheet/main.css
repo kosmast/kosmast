@@ -10,11 +10,9 @@
 #canvas img {
   position: absolute;
   cursor: move;
-  width: 10%;
-  height: 10%;
 }
 
-#image-1 {
+/*#image-1 {
   top: 0;
   left: 200px;
 }
@@ -22,7 +20,7 @@
 #image-2 {
   top: 100px;
   left: 400px;
-}
+}*/
 
 
 button {
