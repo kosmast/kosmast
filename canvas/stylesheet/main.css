@@ -9,7 +9,7 @@
 
 #canvas img {
   position: absolute;
-  cursor: move;
+  cursor: pointer;
 }
 
 .positions {
