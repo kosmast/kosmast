@@ -46,10 +46,19 @@ function playSound(element) {
 
 $(document).ready(function() {
   loadImages(60);  
+  loadPositions(60);
   makeElementsDraggable();
-  helper(60); 
+  // helper(60); 
   // playSoundOnHover();
 });
+
+function loadPositions(counter){
+  for (var i = 1; i <= counter; i++) { 
+    pos = $('.pos' + i ).html();
+    $('#image-' + i).css('top',  pos.split('-')[0] + 'px' );
+    $('#image-' + i).css('left', pos.split('-')[1] + 'px' );
+  }
+}
 
 function loadImages(counter){
   for (var i = 1; i <= counter; i++) { 

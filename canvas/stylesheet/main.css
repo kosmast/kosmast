@@ -12,16 +12,9 @@
   cursor: move;
 }
 
-/*#image-1 {
-  top: 0;
-  left: 200px;
+.positions {
+  visibility: hidden;
 }
-
-#image-2 {
-  top: 100px;
-  left: 400px;
-}*/
-
 
 button {
   display: block;
