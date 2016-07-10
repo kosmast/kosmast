@@ -16,16 +16,37 @@ body {
   cursor: pointer;
 }
 
-.positions {
-  display: none;
+ul.menu {
+  list-style: none;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
 }
 
-button {
-  display: block;
-  margin: 0 auto;
-  width: 200px;
-  height: 50px;
+ul.menu li {
+  margin: 20px;
+  display: inline-block;
+  cursor: pointer;
   font-size: 120%;
+}
+
+ul.menu li:hover {
+  font-weight: bold;
+  font-size: 125%;
+}
+
+ul.menu li.reset {
+  padding: 0 0 0 25px;
+  background: url("../images/reset.png") 0px 5px no-repeat;
+}
+
+ul.menu li.play {
+  padding: 0 0 0 25px;
+  background: url("../images/play.png") 0px 5px no-repeat;
+}
+
+.positions {
+  display: none;
 }
 
 .copyright {
