@@ -41,11 +41,6 @@ ul.menu li {
   font-size: 120%;
 }
 
-ul.menu li:hover {
-  font-weight: bold;
-  font-size: 125%;
-}
-
 .positions {
   display: none;
 }
@@ -53,6 +48,12 @@ ul.menu li:hover {
 .copyright {
   text-align: center;
   font-weight: bold;
+  color: #999;
+}
+
+.copyright a {
+  text-decoration: none;
+  color: #999;
 }
 
  input[type="text"] {
