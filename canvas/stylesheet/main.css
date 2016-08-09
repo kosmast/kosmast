@@ -1,9 +1,8 @@
 body {
-  font-family: 'Coming Soon', cursive;
+  font-family: 'Anaheim', sans-serif;
 }
 
 #canvas {
-  border: 2px solid;
   width: 1000px;
   height: 365px;
   margin: 20px auto;
@@ -11,9 +10,21 @@ body {
   position: relative;
 }
 
+#palette {
+  border: 2px solid;
+  width: 1000px;
+  height: 70px;
+  margin: 20px auto;
+  display: block;
+}
+
 #canvas img {
   position: absolute;
   cursor: pointer;
+}
+
+#canvas img:hover {
+  border: 1px solid red;
 }
 
 ul.menu {
@@ -33,16 +44,6 @@ ul.menu li {
 ul.menu li:hover {
   font-weight: bold;
   font-size: 125%;
-}
-
-ul.menu li.reset {
-  padding: 0 0 0 25px;
-  background: url("../images/reset.png") 0px 5px no-repeat;
-}
-
-ul.menu li.play {
-  padding: 0 0 0 25px;
-  background: url("../images/play.png") 0px 5px no-repeat;
 }
 
 .positions {

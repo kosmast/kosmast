@@ -23,8 +23,8 @@ function sortElements() {
 }
 
 function playAll() {
-  alert('Coming soon!!!');
 
+  scanElements();
   // var sorted_elements = sortElements();
   // var i = 0;                     //  set your counter to 1
   // function myLoop () {           //  create a loop function
@@ -50,6 +50,7 @@ $(document).ready(function() {
   loadImages(60);  
   loadPositions(60);
   makeElementsDraggable();
+  
   //playSoundOnHover();
 });
 
@@ -66,4 +67,26 @@ function loadImages(counter){
     var num = Math.floor(Math.random() * 12) + 1 ;
     $("#canvas").append("<img src='./images/image_" + i + ".png' id='image-" + i + "' data-sound='http://www.telacommunications.com/nutshell/music/sounds-mp3/note" + num + "s.mp3' />");
   }
+}
+
+function scanElements() {
+  var width = $('#canvas').width();
+  for (var i = 1; i <= width; i++) { 
+    elementsAtPosition(i, 60);
+  } 
+}
+
+function elementsAtPosition(pos, counter) {
+  for (var i = 1; i <= counter; i++) { 
+    if ( $('#image-' + i).position().left == pos ) {
+      console.log('POS: ' + pos + ' #image-' + i);
+    }
+  }  
+}
+
+
+function clearCanvas(){
+  $('#canvas img').each(function() {
+      this.remove();
+  });
 }
