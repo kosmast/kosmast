@@ -24,20 +24,20 @@ function sortElements() {
 
 function playAll() {
 
-  scanElements();
-  // var sorted_elements = sortElements();
-  // var i = 0;                     //  set your counter to 1
-  // function myLoop () {           //  create a loop function
-  //    setTimeout(function () {    //  call a 3s setTimeout when the loop is called
-  //       var element = $("#" + sorted_elements[i][0]);
-  //       playSound(element);          //  your code here
-  //       i++;                     //  increment the counter
-  //       if (i < sorted_elements.length) {   
-  //          myLoop();             //  ..  again which will trigger another 
-  //       }                        //  ..  setTimeout()
-  //    }, 100)
-  // }
-  // myLoop(); 
+  // scanElements();
+  var sorted_elements = sortElements();
+  var i = 0;                     //  set your counter to 1
+  function myLoop () {           //  create a loop function
+     setTimeout(function () {    //  call a 3s setTimeout when the loop is called
+        var element = $("#" + sorted_elements[i][0]);
+        playSound(element);          //  your code here
+        i++;                     //  increment the counter
+        if (i < sorted_elements.length) {   
+           myLoop();             //  ..  again which will trigger another 
+        }                        //  ..  setTimeout()
+     }, 100)
+  }
+  myLoop(); 
 }
 
 function playSound(element) {
@@ -51,7 +51,7 @@ $(document).ready(function() {
   loadPositions(60);
   makeElementsDraggable();
   
-  //playSoundOnHover();
+  playSoundOnHover();
 });
 
 function loadPositions(counter){
@@ -65,7 +65,11 @@ function loadPositions(counter){
 function loadImages(counter){
   for (var i = 1; i <= counter; i++) { 
     var num = Math.floor(Math.random() * 12) + 1 ;
-    $("#canvas").append("<img src='./images/image_" + i + ".png' id='image-" + i + "' data-sound='http://www.telacommunications.com/nutshell/music/sounds-mp3/note" + num + "s.mp3' />");
+    if (i == 1 || i == 2 || i == 3) {
+      $("#canvas").append("<img src='./images/image_" + i + ".png' id='image-" + i + "' data-sound='sounds/sound_" + i + ".mp3' />");
+    } else {
+      $("#canvas").append("<img src='./images/image_" + i + ".png' id='image-" + i + "' data-sound='' />");
+    }
   }
 }
 
