@@ -1,14 +1,4 @@
-function makeElementsDraggable() {
-  $('#canvas img').draggable({
-    containment: "#canvas",
-  });
-}
 
-function playSoundOnHover() {
-  $( "#canvas img" ).mouseover(function() { 
-    playSound($(this));
-  });
-}
 
 function sortElements() {
   var elements = [];
@@ -23,7 +13,6 @@ function sortElements() {
 }
 
 function playAll() {
-
   // scanElements();
   var sorted_elements = sortElements();
   var i = 0;                     //  set your counter to 1
@@ -32,65 +21,95 @@ function playAll() {
         var element = $("#" + sorted_elements[i][0]);
         playSound(element);          //  your code here
         i++;                     //  increment the counter
-        if (i < sorted_elements.length) {   
-           myLoop();             //  ..  again which will trigger another 
+        if (i < sorted_elements.length) {
+           myLoop();             //  ..  again which will trigger another
         }                        //  ..  setTimeout()
      }, 100)
   }
-  myLoop(); 
+  myLoop();
 }
 
-function playSound(element) {
-  var audioElement = document.createElement('audio');
-  audioElement.setAttribute('src', element.data("sound"));
-  audioElement.play();  
-}
-
-$(document).ready(function() {
-  loadImages(60);  
-  loadPositions(60);
-  makeElementsDraggable();
-  
-  playSoundOnHover();
-});
-
-function loadPositions(counter){
-  for (var i = 1; i <= counter; i++) { 
-    pos = $('.pos' + i ).html();
-    $('#image-' + i).css('top',  pos.split('-')[0] + 'px' );
-    $('#image-' + i).css('left', pos.split('-')[1] + 'px' );
-  }
-}
-
-function loadImages(counter){
-  for (var i = 1; i <= counter; i++) { 
-    var num = Math.floor(Math.random() * 12) + 1 ;
-    if (i == 1 || i == 2 || i == 3) {
-      $("#canvas").append("<img src='./images/image_" + i + ".png' id='image-" + i + "' data-sound='sounds/sound_" + i + ".mp3' />");
-    } else {
-      $("#canvas").append("<img src='./images/image_" + i + ".png' id='image-" + i + "' data-sound='' />");
-    }
-  }
-}
 
 function scanElements() {
   var width = $('#canvas').width();
-  for (var i = 1; i <= width; i++) { 
+  for (var i = 1; i <= width; i++) {
     elementsAtPosition(i, 60);
-  } 
+  }
 }
 
 function elementsAtPosition(pos, counter) {
-  for (var i = 1; i <= counter; i++) { 
+  for (var i = 1; i <= counter; i++) {
     if ( $('#image-' + i).position().left == pos ) {
       console.log('POS: ' + pos + ' #image-' + i);
     }
-  }  
+  }
 }
-
 
 function clearCanvas(){
   $('#canvas img').each(function() {
       this.remove();
   });
 }
+
+function reset() {
+  clearCanvas();
+  loadImages(60);
+  loadPositions(60);
+  makeElementsDraggable();
+  playSoundOnHover();
+}
+
+$(document).ready(function() {
+  reset();
+  loadInputs(60);
+  getSounds();
+});
+
+function loadImages(counter) {
+  for (var i = 1; i <= counter; i++) {
+    $("#canvas").append("<img src='./images/image_" + i + ".png' id='image-" + i + "' />");
+  }
+}
+
+function loadPositions(counter) {
+  for (var i = 1; i <= counter; i++) {
+    pos = $('.pos' + i ).html();
+    $('#image-' + i).css('top',  pos.split('-')[0] + 'px' );
+    $('#image-' + i).css('left', pos.split('-')[1] + 'px' );
+  }
+}
+
+function makeElementsDraggable() {
+  $('#canvas img').draggable({
+    containment: "#canvas",
+  });
+}
+
+function playSoundOnHover() {
+  $( "#canvas img" ).mouseover(function() {
+    playSound($(this));
+  });
+}
+
+function playSound(element) {
+  var audioElement = document.createElement('audio');
+  audioElement.setAttribute('src', element.data("sound"));
+  audioElement.play();
+}
+
+///////////////////////////////////////////////////////////
+function loadInputs(counter) {
+  for (var i = 1; i <= counter; i++) {
+    $(".sound-form").append("Image #" + i + " <input type='text' name='sound-" + i + "'> <br>");
+  }
+}
+
+function getSounds() {
+  $(document).on('change', 'input', function() {
+    let id = this.name.split('-')[1];
+    debugger;
+    $('#image-' + id ).data( "sound", this.value );
+  });
+}
+
+
