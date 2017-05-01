@@ -1,376 +1,41 @@
 * {
-	padding: 0;
-	margin: 0;
-	max-width: 2000px;
+  padding: 0;
+  margin: 0;
 }
-
+body {
+  background: #000;
+  color: #fff;
+}
 a {
-	text-decoration: none;
-	color: inherit;
+  text-decoration: none;
 }
 
-a:hover {
-	color: #6aa7cf;
+.left { text-align: left; }
+.right{ text-align: right; }
+.post {
+  text-align: justify;
+  border-bottom: 2px dotted #fff;
+  margin-bottom: 30px;
+}
+.post--info {
+  margin-bottom: 1rem;
 }
 
-.noselect {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    cursor: default;
+.post--body img {
+  max-width: 100%;
+  height: auto;
 }
 
-.container {
-	background: url("https://cloud.githubusercontent.com/assets/2961492/6998182/78667c84-dbe0-11e4-9f1b-4c9bd5ada099.png") ;
-
-	/*background: #eee;*/
-	/*
-	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-	position: relative;
-	*/
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
 }
-
-header {
-	position: relative;
-	width: 100%;
-	color: #fff;
-	padding: 10px 0 0 0;
-	font-family: "Arial Black", Gadget, sans-serif;
-	background: url("https://cloud.githubusercontent.com/assets/2961492/6998258/f94f4932-dbe2-11e4-8487-cf4f50a90105.png") ;
-}
-
-header h2 {
-	max-width: 800px;
-	margin: 0 auto;
-	color: #6AA7D1;
-	font-weight: bold; 
-	padding: 0 10%;
-	font-family:'Poiret One', cursive;
-	font-size:210%;
-}
-	
-header span {
-	max-width: 800px;
-	margin: 0 auto 10px auto;		
-	display: block; 
-	padding: 0 10%; 
-	font-size:140%; 
-	font-family:'Poiret One', cursive;
-}
-nav {
-	overflow: auto;
-	background: #fff;
-	width: 80%;
-	padding: 0 10%;
-	box-shadow: 0px 5px 20px #888888;
-	display: block;
-}
-
-nav ul {
-	overflow: auto;
-	max-width: 800px;
-	display: block;
-	margin: 0 auto;
-	list-style: none;
-}
-
-
-nav ul li {
-	float: left;
-	background: #fff;
-	padding: 15px 10px 10px 10px;	
-	font-family: 'Roboto', sans-serif;
-	font-weight: 200;
-	font-size: 95%;
-}
-
-nav ul li a{	
-	text-transform: uppercase;
-	color: #000;
-	cursor: pointer;
-}
-
-nav ul li a.active {
-	color: #6AA7D1;
-}	
-
-nav ul li#display-menu, nav ul li#display-logo {
-	display: none;
-	padding: 10px 10px 10px 0;
-}
-
-nav ul li#display-logo {
-	padding-right:50px;
-	font-family: 'Poiret One', cursive;
-	color: #6AA7D1;
-	font-weight: bold;
-	font-size: 130%;
-}
-
-#first-element {
-	padding-left: 0;
-}
-
-/********** WELCOME SECTION STARTS HERE **********/
-
-div.circular {
-	background: url("https://scontent-cdg2-1.xx.fbcdn.net/hphotos-xfa1/v/t1.0-0/s526x395/10534515_533195013493859_7665403356327233333_n.jpg?oh=8c1c943f6be60623c436138e711b05b7&oe=57A734C8");
-	background-repeat: no-repeat;
-   	background-position: 50% 30%;
-   	border-radius: 50%;
-   	width: 200px;
-   	height: 200px;
-   	background-size: 100%;
-   	color: #fff;
-   	display: inline-block;
-   	float: left;
-   	margin: 0 auto 20px auto;
-}
-
-p.welcome-text {
-	display: inline-block; 
-	padding-left: 15px;
-	width: calc(100% - 215px);
-	color: #888;
-	float: left;
-}
-
-/********** WELCOME SECTION ENDS HERE **********/
-
-
-.wrapper {
-	/*border-radius: 10px;*/
-	overflow: auto;
- 	font-family: 'Roboto', sans-serif;
-	margin: 40px auto;
-	background: #fff;
-	width: calc(80% - 30px);
-	font-size: 110%;
-	min-height: 300px;
-	max-width: 800px;
-	/*border: 1px solid #888888;*/
-	box-shadow: 0px 0px 10px #888888;
-	padding: 10px 15px;
-}
-
-.section-medium {
-	width: calc(50% - 15px);
-	margin-right: 15px;
-	float: left;
-	display: inline-block;
-}
-
-.section-small {
-	float: left;
-	display: inline-block;
-	width: 50%;
-}	
-
-.section-title {
-	font-family: 'Poiret One', cursive;
-	font-weight: bold;
-	font-size: 175%;
-	border-bottom: 2px dotted;
-	margin: 0 0 20px 0;
-	width: auto;
-	color: #6aa7cf;
-}
-
-/********** EDUCATION STARTS HERE **********/
-.ed-year {
-	float: right;
-	font-weight: normal;
-	color: #888;
-}
-
-.ed-year-top {
-	display: none;
-}
-
-.ed-title {
-	font-weight: bold;
-	margin: 10px 0;
-	color: #6aa7cf;
-}
-
-.ed-description {
-	margin-bottom: 20px; 
-	text-align: justify;
-	color: #888;
-}
-/********** EDUCATION ENDS HERE **********/
-
-
-/********** CONTACT STARTS HERE **********/
-
-form.contact input[type="text"], form.contact input[type="email"] {
-	display: block;
-	padding: 3px 10px;
-	width: calc(100% - 20px);
-	height: 25px;
-	font-size: 110%;
-	margin-bottom: 15px;
-}
-
-form.contact textarea {
-	display: block;
-	padding: 3px 10px;
-	width: calc(100% - 20px);
-	font-size: 110%;
-	margin-bottom: 15px;
-	resize: none;
-	font-family: inherit;
-}
-
-form.contact input[type="submit"] {
-	display: block;
-	float: right;
-	padding: 7px 10px 7px 10px;
-	width: auto;
-	font-size: 110%;
-	background: #6aa7cf; 
-	border: 1px solid #ddd;
-	font-family: 'Poiret One', cursive;
-	font-weight: bold;
-}
-	
-ul.social {
-	list-style: none;
-	color: #888;
-	margin-bottom: 20px;
-	text-align: center;
-}
-
-ul.social li {
-	display: inline-block;
-	margin-right: 20px;
-}
-
-
-ul.social li a {
-	display: inline-block;
-	width: 32px;
-	height: 32px;
-}
-
-ul.social li a.email{
-	background: url('https://cloud.githubusercontent.com/assets/2961492/14985463/3c1781f0-1150-11e6-97ff-dda805972847.png') no-repeat;
-}
-	
-ul.social li a.linkedin{
-	background: url('https://cloud.githubusercontent.com/assets/2961492/14985453/31c6b55e-1150-11e6-8993-622aaed75eb2.png') no-repeat;
-}	
-	
-ul.social li a.facebook{
-	background: url('https://cloud.githubusercontent.com/assets/2961492/14985460/35f5de2a-1150-11e6-8adc-e0a8a2777e2a.png') no-repeat;
-}		
-
-ul.social li a.skype{
-	background: url('https://cloud.githubusercontent.com/assets/2961492/14985441/27c6668a-1150-11e6-9ae0-1d0880dc8f2f.png') no-repeat;
-}
-
-
-/********** CONTACT STARTS HERE **********/
-
-footer {
-	text-align: center;
-	font-family: 'Roboto', sans-serif;
-	background: url("https://cloud.githubusercontent.com/assets/2961492/6998258/f94f4932-dbe2-11e4-8487-cf4f50a90105.png") ;
-	color: #fff;
-	padding: 20px 10%;
-}
-
-@media all and (max-width: 890px) {
-
-/********** EDUCATION STARTS HERE **********/
-.ed-year{
-	display: none;
-}
-.ed-year-top{
-	display: block;
-	padding: 10px 0 0 0;
-	text-align: center;
-}
-.ed-uni, .ed-title {
-	text-align: center;
-}
-/********** EDUCATION ENDS HERE **********/
-
-.section-full {
-	font-size: 90%;
-}
-
-.section-medium {
-	width: 100%;
-	margin-right:0; 
-	display: block;
-	font-size: 90%;
-}
-.section-small {
-	margin-top: 20px;
-	width: 100%;
-	display: block;
-	font-size: 90%;
-}
-
-div.circular {
-   	float: none;
-   	display: block;
-}
-
-p.welcome-text {
-	display: block;
-	width: 100%;
-	padding:0;
-}
-
-form.contact input[type="submit"]{ width: 100%; }
-
-.wrapper {
-	width: calc(90% - 30px);
-}	
-
-header h2, header span {
-	padding: 0 5%;
-}
-
-nav {
-	width: 90%;
-	padding: 0 5%;
-}
-
-nav ul li {
-	float: none;
-	display: none;
-	margin: 5px 0;
-	text-align: left;
-	padding-left: 0;
-}
-
-nav ul li#display-menu {
-	display: inline-block;
-}
-
-nav ul li#display-logo {
-	padding-right: 0;
-}
-
-.wrapper {
-	width: calc(90% - 30px);
-}
-
-
-}
-
-
-@media all and (max-width: 400px) {
-	
-
-
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
